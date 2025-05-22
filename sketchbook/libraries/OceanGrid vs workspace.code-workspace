@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"name": "OceanGridNode",
+			"path": "../../firmware/OceanGridNode"
+		}
+	],
+	"settings": {}
+}
