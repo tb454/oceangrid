@@ -1,0 +1,80 @@
+# Version control
+.git/
+.gitignore
+.svn/
+.hg/
+
+# Node.js dependencies and logs
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Build outputs and artifacts
+dist/
+build/
+out/
+release/
+
+# IDE/editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Test and debug artifacts
+test/
+tests/
+debug/
+*.log
+
+# Temporary and local files
+tmp/
+temp/
+*.tmp
+.local/
+local/
+
+# Environment and secrets
+.env
+.env.*
+*.env
+*.pem
+*.key
+*.crt
+config.local.*
+*.local.yml
+
+# Documentation and markdown
+README*
+*.md
+docs/
+
+# Python cache and test files
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.coverage
+
+# Go build/test cache
+/vendor/
+*.test
+.go-cache/
+
+# Java build outputs
+*.class
+target/
+.gradle/
+
+# Project-specific: Docker and Compose files
+Dockerfile*
+docker-compose*
+
+# Miscellaneous
+.DS_Store
+Thumbs.db
+
+# Exclude lock files and wrapper scripts from ignore (do NOT add patterns for *.lock, .mvnw, .gradlew, .mvn/, .gradle/)
+
+# End of .dockerignore

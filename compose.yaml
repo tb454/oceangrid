@@ -1,0 +1,27 @@
+services:
+  js-ingest:
+    build:
+      context: ./backend/ingest
+      dockerfile: ../ingestDockerfile
+    restart: unless-stopped
+    init: true
+    # env_file: ./.env  # Uncomment if .env file exists in ./backend/ingest
+    networks:
+      - backend
+    # Add depends_on here if ingest requires any other service
+
+  js-ui:
+    build:
+      context: ./dashboard/ui
+      dockerfile: ../uiDockerfile
+    restart: unless-stopped
+    init: true
+    networks:
+      - backend
+    ports:
+      - "3000:3000"  # Expose React app on localhost:3000
+    # Add depends_on here if UI requires any backend service
+
+networks:
+  backend:
+    driver: bridge
